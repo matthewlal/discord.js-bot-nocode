@@ -1,11 +1,12 @@
 {
-  "name": "nodejs-app",
+  "name": "discordjs-buildship",
   "version": "1.0.0",
-  "description": "A minimal Node.js web application.",
+  "description": "Discord.js integrated with Buildship or 3rd party serverless endpoints.",
   "main": "index.js",
-  "author": "alphasec",
+  "author": "dropifyxyz, matthewlal",
   "license": "MIT",
-   "dependencies": {
+  "dependencies": {
+    "discord.js": "^14.15.3"
   },
   "scripts": {
     "start": "node index.js"
