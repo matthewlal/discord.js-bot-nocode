@@ -7,26 +7,26 @@ Drag and drop Discord bots (Discord.js) integrated with low-code no-code backend
 1. `GATEWAY_INTENTS`
 Make a comma-separated list of these values, ie: `Guilds, GuildMembers`.
 
-Guilds
-GuildMembers
-GuildModeration
-GuildIntegrations
-GuildWebhooks
-GuildInvites
-GuildVoiceStates
-GuildPresences
-GuildMessages
-GuildMessageReactions
-GuildMessageTyping
-DirectMessages
-DirectMessageReactions
-DirectMessageTyping
-MessageContent
-GuildScheduledEvents
-AutoModerationConfiguration
-AutoModerationExecution
-GuildMessagePolls
-DirectMessagePolls
+- Guilds
+- GuildMembers
+- GuildModeration
+- GuildIntegrations
+- GuildWebhooks
+- GuildInvites
+- GuildVoiceStates
+- GuildPresences
+- GuildMessages
+- GuildMessageReactions
+- GuildMessageTyping
+- DirectMessages
+- DirectMessageReactions
+- DirectMessageTyping
+- MessageContent
+- GuildScheduledEvents
+- AutoModerationConfiguration
+- AutoModerationExecution
+- GuildMessagePolls
+- DirectMessagePolls
 
 Source: [https://discord-api-types.dev/api/discord-api-types-v10/enum/GatewayIntentBits](https://discord-api-types.dev/api/discord-api-types-v10/enum/GatewayIntentBits)
 
