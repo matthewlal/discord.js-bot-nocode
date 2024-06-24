@@ -1,6 +1,6 @@
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/xyquaG?referralCode=RDF68R)
 
-Drag and drop 24/7 Discord bots (Discord.js) integrated with low-code no-code backend tools like Buildship, FastGen, Xano or 3rd party serverless endpoints hosted on Railway a low-code no-code instant deployment plaform. 
+Drag and drop 24/7 Discord bots (Discord.js) integrated with low-code no-code backend tools like Buildship, FastGen, Xano or 3rd party serverless endpoints. Hosted on Railway a 24/7 low-code no-code instant deployment plaform.
 
 ## Railway Variables
 
