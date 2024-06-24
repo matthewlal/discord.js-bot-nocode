@@ -6,15 +6,31 @@ BigInt.prototype["toJSON"] = function () {
   return this.toString();
 };
 
-// Create a new client instance
-const client = new Client({ intents: [
+const defaultGatewayIntents = [
   GatewayIntentBits.Guilds, 
   GatewayIntentBits.GuildMessages, 
   GatewayIntentBits.GuildMembers,
-  GatewayIntentBits.MessageContent
-] });
+];
 
-//Buildship message endpoint
+let intents = [];
+
+if (process.env.GATEWAY_INTENTS && process.env.GATEWAY_INTENTS.split(',').length > 0) {
+  for (let gatewayIntent of process.env.GATEWAY_INTENTS.split(',')) {
+    gatewayIntent = gatewayIntent.trim()
+    if (Number.isInteger(GatewayIntentBits[gatewayIntent.trim()])) {
+      intents.push(GatewayIntentBits[gatewayIntent.trim()]);
+    }
+  }
+} else {
+  intents = defaultGatewayIntents;
+}
+console.log(`Intents for Discord Client: ${intents}`)
+
+
+// Create a new client instance
+const client = new Client({ intents: intents });
+
+// No-code / low-code backend message endpoint (ie: BuildShip, Fastgen, etc)
 client.on(Events.MessageCreate, async message => {
   try {
     const response = await fetch(process.env.MESSAGE_ENDPOINT, {
@@ -32,7 +48,7 @@ client.on(Events.MessageCreate, async message => {
   }
 })
 
-// Buildship interactions endpoint
+// No-code / low-code backend message endpoint (ie: BuildShip, Fastgen, etc)
 client.on(Events.InteractionCreate, async interaction => {
   if (!interaction.isChatInputCommand()) return;
 
