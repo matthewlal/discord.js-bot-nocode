@@ -2,6 +2,8 @@
 
 Drag and drop 24/7 Discord bots (Discord.js) integrated with low-code no-code backend tools like Buildship, FastGen, Xano or 3rd party serverless endpoints. Hosted on Railway a 24/7 low-code no-code instant deployment plaform.
 
+[!(https://img.youtube.com/vi/tBTvenDmkdw/0.jpg)](https://youtu.be/tBTvenDmkdw?si=Ztot8vaZdPb4LzyO "How to Make a Drag & Drop 24/7 Discord Bot (Railway, Buildship)")
+
 ## Railway Variables
 
 1. `GATEWAY_INTENTS`
